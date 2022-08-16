@@ -8,11 +8,14 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
-
+    const preco = Number(prompt("Informe  preço de um produto "));
+    let aumento;
     //Processamento
-
+    (preco < 281) ? aumento = preco + preco * 0.2
+     :(preco < 701) ? aumento = preco + preco * 0.15
+     :(preco < 1501) ? aumento = preco + preco * 0.1
+     : aumento = preco + preco * 0.05
     
     //Saída
-
+    document.write(`O novo preço do produto será ${aumento}`)
 </script>
